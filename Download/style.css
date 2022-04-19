@@ -2965,6 +2965,7 @@ html,
 		
 		.wp-block-button {
 			margin: 3rem 0;
+			width: 200px;
 		}
 		
 		.wp-block-button.is-style-outline {
