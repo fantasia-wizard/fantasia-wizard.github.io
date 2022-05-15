@@ -116,8 +116,13 @@
 						style="border-radius:10px"><img src="./Media/play_in_browser.png">
 					</a></div>
 			</div>
-			<embed type="text/html" src="https://fantasia-wizard.github.io/play/" style="width:400px; height:225px;">
-
+			<form action="/suggestions_page.php">
+				<p><label for="Features">Want a feature added?  Drop a message here, and I'll consider it.</label></p>
+				<textarea id="w3review" name="w3review" rows="4"
+					cols="50"></textarea>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
 			<div class="has-text-align-center">
 				<h1>Changelog</h1>
 				<h3>Alpha 1</h3>
@@ -138,7 +143,9 @@
 					<li>More responsive combat
 				</ul>
 				<h3>Alpha 1.5.1</h3>
-					<ul><li>Updates to the tutorial</ul>
+				<ul>
+					<li>Updates to the tutorial
+				</ul>
 				<h3>Alpha 1.6</h3>
 				<ul>
 					<li>Fixed a bug that caused NPCs to display the incorrect dialogue.</li>
@@ -279,8 +286,7 @@
 	<p class="aligncenter" style="position: relative; left: 3pc; top:5pc; font-size: 15pt;"><a
 			href="../Legal/">Legal</a><a style="position: relative; left: 3pc;"
 			href="https://wordpress.org/">Wordpress</a>
-			<a style="position: relative; left: 5pc;"
-			href="../Gallery/">Gallery</a></p>
+		<a style="position: relative; left: 5pc;" href="../Gallery/">Gallery</a></p>
 	</body>
 
 </html>
