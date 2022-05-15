@@ -12,6 +12,14 @@
             font-family: 'VT323', monospace;
             color: black;
         }
+        .screenshot:hover{
+            border-style: solid;
+        }
+        .screenshot{
+            width:50%;
+            position: relative;
+            left:25%;
+        }
     </style>
 </head>
 <body>
@@ -21,15 +29,18 @@
 
 			<a name="Gallery"></a>
 			<h1 class="entry-title">Gallery</h1>
+            <a href="../"><h3>&lt; Back to home page</h3></a>
 		</div>
 
 	</header>
     <div class="post-inner thin ">
         <div class="entry-content">
-            <div class="wp-block-image"><img src="./Media/bats.png"></div>
-            <div class="wp-block-image"><img src="./Media/mountain.png"></div>
-            <div class="wp-block-image"><img src="./Media/on_bridge.png"></div>
-            <div class="wp-block-image"><img src="./Media/wheat.png"></div>
+            <h4 class="has-text-align-center">Click any image to zoom in.</h4>
+            <h5 class="has-text-align-center">More images whenever I add some.</h5>
+            <a href="./Media/bats.png"><div class="wp-block-image"><img class="screenshot" src="./Media/bats.png"></div></a>
+            <a href="./Media/mountain.png"><div class="wp-block-image"><img class="screenshot" src="./Media/mountain.png"></div></a>
+            <a href="./Media/on_bridge.png"><div class="wp-block-image"><img class="screenshot" src="./Media/on_bridge.png"></div></a>
+            <a href="./Media/wheat.png"><div class="wp-block-image"><img class="screenshot" src="./Media/wheat.png"></div></a>
             <div class="wp-block-image"><img src="./Media/icon.png"></div>
         </div>
     </div>
