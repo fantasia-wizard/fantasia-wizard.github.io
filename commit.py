@@ -29,14 +29,16 @@ def message(text: string):
     print(response)
 commit_message = input('Commit message: ')
 os.system('git add \.\/\* >> ../add.txt && git commit -m \'' + commit_message + '\' >> ../commit.txt && git push -u origin main')
-git_messages = 'Add:\\n'
-with open('../add.txt') as file:
+git_messages = 'Add:\n'
+with open('../add.txt', 'w') as file:
     for x in file.readlines():
         git_messages += x
     file.close()
-with open('../commit.txt') as file:
-    git_messages += '\\nCommit:\\n'
+with open('../commit.txt', 'w') as file:
+    git_messages += '\nCommit:\n'
     for x in file.readlines():
         git_messages += x
     file.close()
 message('New commit pushed to main branch ' + name + ' : ' + commit_message + '\\n' + git_messages)
+os.remove('../add.txt')
+os.remove('../commit.txt')
