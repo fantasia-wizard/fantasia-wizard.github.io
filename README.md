@@ -1,6 +1,6 @@
-# fantasia-wizard.github.io
-<a href="https://fantasia-wizard.github.io/">fantasia-wizard.github.io/</a>
-
-This is the website for my game, <i>Fantasia</i>.  It contains download links for the compiled version, and the ability to play in your browser.  Most of this website was generated with Wordpress, most especially 'style.css', a 6,000 line file of Cascading Style Sheets.  Other parts were written by me in HTML, using the CSS from Wordpress.
-
-Change log is available on the <a href="https://github.com/fantasia-wizard/Fantasia">main repository</a>.
+# sturdy-octo-lamp
+https://fantasia-wizard.github.io/sturdy-octo-lamp<br>
+Project uses javascript to load applications from /games<br>
+Application needs a folder, named as the title of the game (i.e 'Fantasia')<br>
+inside the folder, it needs a folder called 'media' including the icon, with the filename 'icon.png'<br>
+then add the name to the 'games' list in /home/script.js<br>
