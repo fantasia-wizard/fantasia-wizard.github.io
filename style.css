@@ -36,6 +36,15 @@ html{
   text-align: center;
 }
 .button{
+  animation:
+    app_leave_hover
+    0.25s
+    ease-out
+    0s
+    alternate
+    1
+    forwards
+    running;
   border: 0px solid #181425;
   border-radius: 1pc;
   padding: 1px;
@@ -44,6 +53,15 @@ html{
   cursor: pointer;
 }
 .button:hover{
+  animation:
+    app_hover
+    0.25s
+    ease-out
+    0s
+    alternate
+    1
+    forwards
+    running;
   background-color: #c0cbdc;
 }
 a{

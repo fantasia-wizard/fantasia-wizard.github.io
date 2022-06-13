@@ -39,4 +39,4 @@ with open('../commit.txt') as file:
     for x in file.readlines():
         git_messages += x
     file.close()
-message('New commit pushed to main branch ' + name + ' : ' + commit_message)
+message('New commit pushed to main branch ' + name + ' : ' + commit_message + '\\n' + git_messages)
