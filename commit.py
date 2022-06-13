@@ -30,11 +30,11 @@ def message(text: string):
 commit_message = input('Commit message: ')
 os.system('git add \.\/\* >> ../add.txt && git commit -m \'' + commit_message + '\' >> ../commit.txt && git push -u origin main')
 git_messages = 'Add:\n'
-with open('../add.txt', 'w') as file:
+with open('../add.txt', 'r') as file:
     for x in file.readlines():
         git_messages += x
     file.close()
-with open('../commit.txt', 'w') as file:
+with open('../commit.txt', 'r') as file:
     git_messages += '\nCommit:\n'
     for x in file.readlines():
         git_messages += x
