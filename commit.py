@@ -10,7 +10,6 @@ os.chdir(dir)
 name = dir.removeprefix(parent_dir + '/')
 
 def message(text: string):
-    """Hangouts Chat incoming webhook quickstart."""
     url = 'https://chat.googleapis.com/v1/spaces/AAAA9EakoSo/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ETmHwLjxmOSeSLRgfC-6EVhOXNTg6C2HyIWKETZDOhI%3D'
     bot_message = {
             'text' : text}
@@ -27,18 +26,14 @@ def message(text: string):
     )
 
     print(response)
+
 commit_message = input('Commit message: ')
-os.system('git add \.\/\* >> ../add.txt && git commit -m \'' + commit_message + '\' >> ../commit.txt && git push -u origin main')
-git_messages = 'Add:\n'
-with open('../add.txt', 'r') as file:
-    for x in file.readlines():
-        git_messages += x
-    file.close()
+os.system('git add \.\/\* && git commit -m \'' + commit_message + '\' >> ../commit.txt && git push -u origin main')
 with open('../commit.txt', 'r') as file:
-    git_messages += '\nCommit:\n'
+    git_messages += '\History:\n'
     for x in file.readlines():
         git_messages += x
     file.close()
-message('New commit pushed to main branch ' + name + ' : ' + commit_message + '\\n' + git_messages)
+message('New commit pushed to main branch of ' + name + ' : ' + commit_message + '\n' + git_messages)
 os.remove('../add.txt')
 os.remove('../commit.txt')
