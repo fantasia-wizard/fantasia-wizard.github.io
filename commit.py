@@ -29,6 +29,7 @@ def message(text: string):
 
 commit_message = input('Commit message: ')
 os.system('git add \.\/\* && git commit -m \'' + commit_message + '\' >> ../commit.txt && git push -u origin main')
+git_messages = ''
 with open('../commit.txt', 'r') as file:
     git_messages += '\History:\n'
     for x in file.readlines():
