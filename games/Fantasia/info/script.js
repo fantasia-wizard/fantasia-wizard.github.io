@@ -8,6 +8,7 @@ for (i in versions){
     menu.appendChild(new_item);
     new_item.href = "#" + versions[i];
     new_item.innerHTML = versions[i];
+    new_item.setAttribute("class", "menu_a")
 }
 for (i in contents){
     var content_name = '';
@@ -27,6 +28,7 @@ for (i in contents){
     menu.appendChild(new_item);
     new_item.href = "#" + contents[i];
     new_item.innerHTML = content_name;
+    new_item.setAttribute("class", "menu_a")
 }
 for (i in sections){
     var menu = document.getElementById("legal-menu-content");
@@ -34,4 +36,5 @@ for (i in sections){
     menu.appendChild(new_item);
     new_item.href = "#" + sections[i];
     new_item.innerHTML = sections[i];
+    new_item.setAttribute("class", "menu_a")
 }

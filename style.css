@@ -113,6 +113,26 @@ a{
     forwards
     running;
 }
+.menu:hover{
+  background-color: #c0cbdc;
+  border-radius: 1pc;
+}
+.menu a{
+  text-align: center;
+  display: none;
+  background-color: #c0cbdc;
+  border-radius: 1pc;
+  color: #0c0a13;
+}
+.menu_a:hover{
+  background-color: #8b9bb4;
+}
+.menu:hover .menu_a{
+  display: block;
+}
+pre{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
 @keyframes app_hover {
   0% {
     filter: drop-shadow(0px 0px 0px #181425);
