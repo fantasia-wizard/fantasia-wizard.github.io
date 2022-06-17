@@ -1,8 +1,8 @@
-var versions = ["1", "1.5", "1.5.1", "1.6", "1.6.5", "1.6.6"];
+var versions = ["1", "1.5", "1.5.1", "1.6", "1.6.5", "1.6.6", "1.5", "1.5.1", "1.6", "1.6.5", "1.6.6", "1.5", "1.5.1", "1.6", "1.6.5", "1.6.6", "1.5", "1.5.1", "1.6", "1.6.5", "1.6.6", "1.5", "1.5.1", "1.6", "1.6.5", "1.6.6"];
 var contents = ["Changelog", "License"]
 var sections = ["Fantasia", "Plugins", "Engine", "Fonts"]
 
-for (i in versions){
+for (i in versions) {
     var menu = document.getElementById("version-menu-content");
     var new_item = document.createElement("a");
     menu.appendChild(new_item);
@@ -10,9 +10,9 @@ for (i in versions){
     new_item.innerHTML = versions[i];
     new_item.setAttribute("class", "menu_a")
 }
-for (i in contents){
+for (i in contents) {
     var content_name = '';
-    switch (contents[i]){
+    switch (contents[i]) {
         case 'Changelog':
             content_name = 'Changelog';
             break;
@@ -20,7 +20,7 @@ for (i in contents){
             content_name = 'License and Legal Info'
             break;
     }
-    if (content_name == ''){
+    if (content_name == '') {
         content_name = contents[i]
     }
     var menu = document.getElementById("contents-menu-content");
@@ -30,7 +30,7 @@ for (i in contents){
     new_item.innerHTML = content_name;
     new_item.setAttribute("class", "menu_a")
 }
-for (i in sections){
+for (i in sections) {
     var menu = document.getElementById("legal-menu-content");
     var new_item = document.createElement("a");
     menu.appendChild(new_item);

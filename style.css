@@ -108,6 +108,7 @@ a {
 }
 
 .menu a {
+    width: 100%;
     padding: 1pc;
     margin: 1pc;
     text-align: center;
@@ -135,6 +136,12 @@ a {
     border-bottom-right-radius: 0pc;
 }
 
+.menu-content {
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 10px #181425);
+}
+
 pre {
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
@@ -143,6 +150,25 @@ pre {
     position: absolute;
     top: 0pc;
     right: 1pc;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    border-radius: 1pc;
+    background-color: #5a6988;
+    padding: 1pc;
+    color: #0c0a13;
+    cursor: default;
+}
+
+li {
+    cursor: default;
+}
+
+li:hover {
+    text-decoration: underline;
 }
 
 @keyframes app_hover {
