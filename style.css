@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kdam+Thmor+Pro&display=swap');
 
 html {
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -42,7 +42,7 @@ html {
 
 .button {
     animation:
-        app_leave_hover 0.25s ease-out 0s alternate 1 forwards running;
+        hover_unselect 0.25s ease-out 0s alternate 1 forwards running;
     border: 0px solid #181425;
     border-radius: 1pc;
     padding: 1px;
@@ -54,7 +54,7 @@ html {
 
 .button:hover {
     animation:
-        app_hover 0.25s ease-out 0s alternate 1 forwards running;
+        hover_select 0.25s ease-out 0s alternate 1 forwards running;
     color: #181425;
     background-color: #c0cbdc;
 }
@@ -79,7 +79,7 @@ a {
 
 .app {
     animation:
-        app_leave_hover 0.25s ease-out 0s alternate 1 forwards running;
+        hover_unselect 0.25s ease-out 0s alternate 1 forwards running;
     margin: 1%;
     display: inline-block;
     width: 31.25%;
@@ -94,7 +94,7 @@ a {
 
 .app:hover {
     animation:
-        app_hover 0.25s ease-out 0s alternate 1 forwards running;
+        hover_select 0.25s ease-out 0s alternate 1 forwards running;
 }
 
 .menu:hover .menu-content {
@@ -108,7 +108,6 @@ a {
 }
 
 .menu a {
-    width: 100%;
     padding: 1pc;
     margin: 1pc;
     text-align: center;
@@ -137,7 +136,7 @@ a {
 }
 
 .menu-content {
-    position: absolute;
+    position: auto;
     z-index: 1;
     filter: drop-shadow(0px 0px 10px #181425);
 }
@@ -168,10 +167,17 @@ li {
 }
 
 li:hover {
-    text-decoration: underline;
+    background-color: #3a4466;
 }
 
-@keyframes app_hover {
+.hyperlink {
+    background-color: #3a4466;
+    padding-left: 1pc;
+    padding-right: 1pc;
+    border-radius: 1pc;
+}
+
+@keyframes hover_select {
     0% {
         filter: drop-shadow(0px 0px 0px #181425);
     }
@@ -181,7 +187,7 @@ li:hover {
     }
 }
 
-@keyframes app_leave_hover {
+@keyframes hover_unselect {
     0% {
         filter: drop-shadow(0px 0px 10px #181425);
     }
